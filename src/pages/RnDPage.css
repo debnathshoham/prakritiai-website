@@ -1,0 +1,167 @@
+.rnd-page {
+  min-height: 100vh;
+}
+
+.rnd-section {
+  padding: 5rem 0;
+  background-color: #f9fafb;
+}
+
+.rnd-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.rnd-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.rnd-icon {
+  width: 4rem;
+  height: 4rem;
+  color: #2563eb;
+  margin: 0 auto 1.5rem auto;
+}
+
+.rnd-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+
+.rnd-description {
+  font-size: 1.25rem;
+  color: #6b7280;
+  max-width: 48rem;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.innovation-section {
+  display: grid;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.innovation-image {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.innovation-content h2 {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+
+.innovation-intro {
+  color: #6b7280;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.research-areas {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.research-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.research-icon {
+  width: 2rem;
+  height: 2rem;
+  color: #2563eb;
+  margin-top: 0.25rem;
+  flex-shrink: 0;
+}
+
+.research-item-content h4 {
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.research-item-content p {
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+.current-research-card {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.current-research-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.current-research-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.current-research-item h4 {
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 0.75rem;
+}
+
+.current-research-item p {
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .innovation-section {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .current-research-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .rnd-container {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .rnd-title {
+    font-size: 2.5rem;
+  }
+  
+  .rnd-description {
+    font-size: 1.125rem;
+  }
+  
+  .innovation-content h2 {
+    font-size: 1.5rem;
+  }
+  
+  .rnd-section {
+    padding: 3rem 0;
+  }
+  
+  .current-research-card {
+    padding: 1.5rem;
+  }
+}

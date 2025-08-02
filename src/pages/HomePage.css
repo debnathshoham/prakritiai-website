@@ -1,0 +1,170 @@
+/* About Us Section */
+.about-section {
+  padding: 5rem 0;
+  background-color: #f9fafb;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+
+.about-description {
+  font-size: 1.25rem;
+  color: #6b7280;
+  max-width: 48rem;
+  margin: 0 auto 4rem auto;
+  line-height: 1.6;
+}
+
+/* Vision & Mission Grid */
+.vision-mission-grid {
+  display: grid;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.vision-mission-item {
+  text-align: left;
+  padding: 2rem;
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.vision-mission-title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.vision-mission-text {
+  color: #6b7280;
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+/* Laboratory Video Section */
+.video-section {
+  padding: 5rem 0;
+  background-color: #111827;
+}
+
+.video-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.video-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.video-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.video-description {
+  font-size: 1.25rem;
+  color: #d1d5db;
+  max-width: 48rem;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.video-wrapper {
+  max-width: 56rem;
+  margin: 0 auto;
+}
+
+.video-player {
+  position: relative;
+  background-color: black;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.video-thumbnail {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+.video-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play-button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 1.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play-button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .vision-mission-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .about-container {
+    padding: 0 2rem;
+  }
+  
+  .video-container {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-title {
+    font-size: 2rem;
+  }
+  
+  .video-title {
+    font-size: 2rem;
+  }
+  
+  .about-description,
+  .video-description {
+    font-size: 1.125rem;
+  }
+}
